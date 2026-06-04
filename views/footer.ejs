@@ -1,158 +1,77 @@
-<!-- Footer Section Start -->
-<footer class="w-full bg-bg-body-alt text-text-secondary transition-colors duration-300 pt-20 pb-10 border-t border-border-color">
-    <div class="max-w-7xl mx-auto px-6 md:px-12">
-        <!-- Contact Tiles Grid (Redesigned as luxury white cards with tilt compatibility) -->
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center pb-12 border-b border-border-color-light">
-            <!-- Phone Tile -->
-            <div class="card-3d flex flex-col items-center gap-4 p-8 rounded-3xl bg-white border border-border-color-light hover:border-primary/20 transition-premium shadow-sm">
-                <div class="h-14 w-14 rounded-full bg-primary/10 flex items-center justify-center text-primary text-xl hover:scale-110 transition-transform duration-300 shadow-sm" style="box-shadow: 0 4px 12px rgba(5, 150, 105, 0.1)">
-                    <i class="fa fa-phone-alt"></i>
-                </div>
-                <h4 class="font-heading text-lg font-black text-text-primary tracking-tight">Call Direct</h4>
-                <a href="tel:+917321835093" class="hover:text-primary transition-colors text-base font-extrabold">+91 7321835093</a>
+<div class="footer bg-[#333] text-white py-12 px-6 md:px-16 lg:px-24">
+    <!-- contact info -->
+    <div class="contact-info flex flex-wrap justify-center items-stretch gap-8 mb-8 text-center">
+        <div class="flex-1 min-w-[220px] bg-white/5 p-6 rounded-2xl border border-white/5 flex flex-col items-center justify-center hover:bg-white/10 transition-all duration-300">
+            <div class="w-12 h-12 flex items-center justify-center rounded-full bg-primary text-white mb-4 text-xl shadow-lg shadow-primary/20">
+                <i class="fa fa-phone-alt"></i>
             </div>
-            
-            <!-- Email Tile -->
-            <div class="card-3d flex flex-col items-center gap-4 p-8 rounded-3xl bg-white border border-border-color-light hover:border-primary/20 transition-premium shadow-sm">
-                <div class="h-14 w-14 rounded-full bg-primary/10 flex items-center justify-center text-primary text-xl hover:scale-110 transition-transform duration-300 shadow-sm" style="box-shadow: 0 4px 12px rgba(5, 150, 105, 0.1)">
-                    <i class="fa fa-envelope"></i>
-                </div>
-                <h4 class="font-heading text-lg font-black text-text-primary tracking-tight">Email Desk</h4>
-                <a href="mailto:contact@fmpg.in" class="hover:text-primary transition-colors text-base font-extrabold lowercase">contact@fmpg.in</a>
-            </div>
-
-            <!-- Location Tile -->
-            <div class="card-3d flex flex-col items-center gap-4 p-8 rounded-3xl bg-white border border-border-color-light hover:border-primary/20 transition-premium shadow-sm">
-                <div class="h-14 w-14 rounded-full bg-primary/10 flex items-center justify-center text-primary text-xl hover:scale-110 transition-transform duration-300 shadow-sm" style="box-shadow: 0 4px 12px rgba(5, 150, 105, 0.1)">
-                    <i class="fa fa-map-marker-alt"></i>
-                </div>
-                <h4 class="font-heading text-lg font-black text-text-primary tracking-tight">Our Office</h4>
-                <a href="https://maps.app.goo.gl/KJCAo6hSidjYhC5D8" target="_blank" class="hover:text-primary transition-colors text-base font-extrabold">UIET Hoshiarpur, India</a>
-            </div>
+            <a href="tel:+917321835093" class="text-white hover:text-primary font-medium tracking-wide transition-colors duration-300 text-lg">+917321835093</a>
         </div>
-
-        <!-- Links Grid -->
-        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-12 py-16">
-            <!-- Brand & Info -->
-            <div class="flex flex-col gap-5">
-                <div class="flex items-center gap-3">
-                    <img src="<%= assetUrl('img/logo.png') %>" alt="FMPG Logo" class="h-9 w-auto">
-                    <span class="font-heading text-2xl font-black text-text-primary uppercase tracking-widest">FM<span class="text-primary">PG</span></span>
-                </div>
-                <p class="text-sm text-text-secondary leading-relaxed font-medium">Your premier luxury choice for hassle-free and premium student & professional hostel/PG accommodations. Enjoy high-standard comfort with absolute structural integrity.</p>
-                <div class="mt-2 bg-white p-3 rounded-2xl border border-border-color-light max-w-[160px] flex items-center justify-center shadow-sm">
-                    <img src="<%= assetUrl('img/msme.png') %>" alt="MSME Registered Logo" class="h-12 w-auto object-contain opacity-90 hover:opacity-100 transition-opacity">
-                </div>
+        <div class="flex-1 min-w-[220px] bg-white/5 p-6 rounded-2xl border border-white/5 flex flex-col items-center justify-center hover:bg-white/10 transition-all duration-300">
+            <div class="w-12 h-12 flex items-center justify-center rounded-full bg-primary text-white mb-4 text-xl shadow-lg shadow-primary/20">
+                <i class="fa fa-envelope"></i>
             </div>
-
-            <!-- Company links -->
-            <div class="flex flex-col gap-5">
-                <h3 class="font-heading text-xs font-black text-text-primary uppercase tracking-widest relative pb-2 after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-8 after:bg-primary">Company</h3>
-                <div class="flex flex-col gap-3.5 text-sm font-semibold">
-                    <a href="about" class="group flex items-center gap-1.5 hover:text-primary transition-all duration-300">
-                        <i class="fa-solid fa-chevron-right text-[8px] opacity-0 group-hover:opacity-100 group-hover:translate-x-1 transition-all"></i>
-                        <span>About Us</span>
-                    </a>
-                    <a href="contact" class="group flex items-center gap-1.5 hover:text-primary transition-all duration-300">
-                        <i class="fa-solid fa-chevron-right text-[8px] opacity-0 group-hover:opacity-100 group-hover:translate-x-1 transition-all"></i>
-                        <span>Contact Us</span>
-                    </a>
-                    <a href="team" class="group flex items-center gap-1.5 hover:text-primary transition-all duration-300">
-                        <i class="fa-solid fa-chevron-right text-[8px] opacity-0 group-hover:opacity-100 group-hover:translate-x-1 transition-all"></i>
-                        <span>Our Team</span>
-                    </a>
-                    <a href="owner/newOwner" class="group flex items-center gap-1.5 text-primary hover:text-primary-hover transition-all duration-300">
-                        <i class="fa-solid fa-chevron-right text-[8px] opacity-0 group-hover:opacity-100 group-hover:translate-x-1 transition-all"></i>
-                        <span>List Your Property</span>
-                    </a>
-                    <a href="https://careers.fmpg.in/" target="_blank" class="group flex items-center gap-1.5 hover:text-primary transition-all duration-300">
-                        <i class="fa-solid fa-chevron-right text-[8px] opacity-0 group-hover:opacity-100 group-hover:translate-x-1 transition-all"></i>
-                        <span>Careers</span>
-                    </a>
-                </div>
-            </div>
-
-            <!-- Help and Policy links -->
-            <div class="flex flex-col gap-5">
-                <h3 class="font-heading text-xs font-black text-text-primary uppercase tracking-widest relative pb-2 after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-8 after:bg-primary">Policy & Support</h3>
-                <div class="flex flex-col gap-3.5 text-sm font-semibold">
-                    <a href="privacypolicy" target="_blank" class="group flex items-center gap-1.5 hover:text-primary transition-all duration-300">
-                        <i class="fa-solid fa-chevron-right text-[8px] opacity-0 group-hover:opacity-100 group-hover:translate-x-1 transition-all"></i>
-                        <span>Privacy Policy</span>
-                    </a>
-                    <a href="TermsAndConditions" target="_blank" class="group flex items-center gap-1.5 hover:text-primary transition-all duration-300">
-                        <i class="fa-solid fa-chevron-right text-[8px] opacity-0 group-hover:opacity-100 group-hover:translate-x-1 transition-all"></i>
-                        <span>Terms & Conditions</span>
-                    </a>
-                    <a href="FAQs" class="group flex items-center gap-1.5 hover:text-primary transition-all duration-300">
-                        <i class="fa-solid fa-chevron-right text-[8px] opacity-0 group-hover:opacity-100 group-hover:translate-x-1 transition-all"></i>
-                        <span>FAQs & Help Desk</span>
-                    </a>
-                    <a href="referandearn" class="group flex items-center gap-1.5 hover:text-primary transition-all duration-300">
-                        <i class="fa-solid fa-chevron-right text-[8px] opacity-0 group-hover:opacity-100 group-hover:translate-x-1 transition-all"></i>
-                        <span>Refer and Earn</span>
-                    </a>
-                </div>
-            </div>
+            <a href="mailto:contact@fmpg.in" class="text-white hover:text-primary font-medium tracking-wide transition-colors duration-300 text-lg">contact@fmpg.in</a>
         </div>
-
-        <!-- Social Media and copyright -->
-        <div class="flex flex-col md:flex-row justify-between items-center gap-6 pt-10 border-t border-border-color-light">
-            <div class="flex items-center gap-3">
-                <a href="https://x.com/Find_My_PG" target="_blank" class="h-9 w-9 rounded-full bg-white border border-border-color-light text-text-secondary hover:bg-primary hover:text-white hover:border-primary flex items-center justify-center transition-all duration-300 hover:scale-110">
-                    <i class="fab fa-twitter text-sm"></i>
-                </a>
-                <a href="https://www.facebook.com/profile.php?id=61564104987167" target="_blank" class="h-9 w-9 rounded-full bg-white border border-border-color-light text-text-secondary hover:bg-primary hover:text-white hover:border-primary flex items-center justify-center transition-all duration-300 hover:scale-110">
-                    <i class="fab fa-facebook-f text-sm"></i>
-                </a>
-                <a href="https://www.linkedin.com/company/findmypg/" target="_blank" class="h-9 w-9 rounded-full bg-white border border-border-color-light text-text-secondary hover:bg-primary hover:text-white hover:border-primary flex items-center justify-center transition-all duration-300 hover:scale-110">
-                    <i class="fab fa-linkedin-in text-sm"></i>
-                </a>
-                <a href="https://www.instagram.com/f_m_pg?utm_source=qr&igsh=MTl4bm82anA5dmt4aA==" target="_blank" class="h-9 w-9 rounded-full bg-white border border-border-color-light text-text-secondary hover:bg-primary hover:text-white hover:border-primary flex items-center justify-center transition-all duration-300 hover:scale-110">
-                    <i class="fab fa-instagram text-sm"></i>
-                </a>
-                <a href="http://www.youtube.com/@FMPG" target="_blank" class="h-9 w-9 rounded-full bg-white border border-border-color-light text-text-secondary hover:bg-primary hover:text-white hover:border-primary flex items-center justify-center transition-all duration-300 hover:scale-110">
-                    <i class="fab fa-youtube text-sm"></i>
-                </a>
+        <div class="flex-1 min-w-[220px] bg-white/5 p-6 rounded-2xl border border-white/5 flex flex-col items-center justify-center hover:bg-white/10 transition-all duration-300">
+            <div class="w-12 h-12 flex items-center justify-center rounded-full bg-primary text-white mb-4 text-xl shadow-lg shadow-primary/20">
+                <i class="fa fa-map-marker-alt"></i>
             </div>
-            <p class="text-xs font-bold uppercase tracking-wider text-text-secondary">© FMPG. All Rights Reserved.</p>
+            <a href="https://maps.app.goo.gl/KJCAo6hSidjYhC5D8" target="_blank" class="text-white hover:text-primary font-medium tracking-wide transition-colors duration-300 text-lg text-center">UIET Hoshiarpur, India</a>
         </div>
     </div>
-</footer>
-<!-- Footer Section End -->
 
-<!-- Back to Top Control -->
-<button id="back-to-top-btn" class="fixed right-6 bottom-6 z-[99] h-12 w-12 rounded-full bg-primary text-white flex items-center justify-center shadow-lg hover:bg-primary-hover hover:scale-105 transition-premium scale-0 opacity-0 cursor-pointer" aria-label="Back to Top" style="box-shadow: 0 8px 24px rgba(5, 150, 105, 0.25)">
-    <i class="bi bi-arrow-up text-xl"></i>
-</button>
+    <hr class="border-white/10 my-8">
+
+    <div class="links grid grid-cols-1 md:grid-cols-3 gap-10 items-start text-center md:text-left">
+        <div class="flex items-center justify-center h-full">
+            <img src="<%= assetUrl('img/msme.png') %>" alt="MSME Logo" class="h-20 object-contain filter brightness-100 opacity-90 hover:opacity-100 transition-opacity duration-300">
+        </div>
+        <div class="flex flex-col items-center md:items-start">
+            <h3 class="text-xl font-bold text-white mb-4 border-b border-primary/20 pb-2 w-full max-w-[200px] md:max-w-none">Company</h3>
+            <div class="space-y-2">
+                <a href="about" class="block text-gray-300 hover:text-white transition-colors duration-200">About Us</a>
+                <a href="contact" class="block text-gray-300 hover:text-white transition-colors duration-200">Contact Us</a>
+                <a href="team" class="block text-gray-300 hover:text-white transition-colors duration-200">Our Team</a>
+                <a href="owner/newOwner" class="block text-gray-300 hover:text-white transition-colors duration-200">List Your Property</a>
+                <a href="https://careers.fmpg.in/" class="block text-gray-300 hover:text-white transition-colors duration-200">Careers</a>
+            </div>
+        </div>
+        <div class="flex flex-col items-center md:items-start">
+            <h3 class="text-xl font-bold text-white mb-4 border-b border-primary/20 pb-2 w-full max-w-[200px] md:max-w-none">Policy and Help</h3>
+            <div class="space-y-2">
+                <a href="privacypolicy" target="_blank" class="block text-gray-300 hover:text-white transition-colors duration-200">Privacy Policy</a>
+                <a href="TermsAndConditions" target="_blank" class="block text-gray-300 hover:text-white transition-colors duration-200">Terms & Conditions</a>
+                <a href="FAQs" class="block text-gray-300 hover:text-white transition-colors duration-200">FAQs & Help</a>
+                <a href="referandearn" class="block text-gray-300 hover:text-white transition-colors duration-200">Refer and Earn</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="social-icons bg-[#545050] py-8 text-center text-white flex flex-col items-center justify-center space-y-4">
+    <div class="flex space-x-4">
+        <a href="https://x.com/Find_My_PG" target="_blank" class="w-10 h-10 flex items-center justify-center rounded-full bg-white/10 hover:bg-primary text-white hover:scale-110 transition-all duration-300"><i class="fab fa-twitter text-lg"></i></a>
+        <a href="https://www.facebook.com/profile.php?id=61564104987167" target="_blank" class="w-10 h-10 flex items-center justify-center rounded-full bg-white/10 hover:bg-primary text-white hover:scale-110 transition-all duration-300"><i class="fab fa-facebook-f text-lg"></i></a>
+        <a href="https://www.linkedin.com/company/findmypg/" target="_blank" class="w-10 h-10 flex items-center justify-center rounded-full bg-white/10 hover:bg-primary text-white hover:scale-110 transition-all duration-300"><i class="fab fa-linkedin-in text-lg"></i></a>
+        <a href="https://www.instagram.com/f_m_pg?utm_source=qr&igsh=MTl4bm82anA5dmt4aA==" target="_blank" class="w-10 h-10 flex items-center justify-center rounded-full bg-white/10 hover:bg-primary text-white hover:scale-110 transition-all duration-300"><i class="fab fa-instagram text-lg"></i></a>
+        <a href="http://www.youtube.com/@FMPG" target="_blank" class="w-10 h-10 flex items-center justify-center rounded-full bg-white/10 hover:bg-primary text-white hover:scale-110 transition-all duration-300"><i class="fab fa-youtube text-lg"></i></a>
+    </div>
+    <p class="text-sm text-gray-300">© FMPG. All Rights Reserved.</p>
+</div>
+
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+<!-- Back to Top -->
+<a href="#" class="back-to-top fixed right-[3%] bottom-[45px] z-[99] hidden w-12 h-12 items-center justify-center rounded-full bg-primary text-white shadow-lg hover:bg-opacity-90 active:scale-95 transition-all duration-300"><i class="bi bi-arrow-up text-xl"></i></a>
 
 <!-- JavaScript Libraries -->
 <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-
-<script>
-    (function() {
-        const topBtn = document.getElementById('back-to-top-btn');
-        
-        // Show/hide Back to Top button
-        window.addEventListener('scroll', () => {
-            if (window.scrollY > 300) {
-                topBtn.classList.remove('scale-0', 'opacity-0');
-                topBtn.classList.add('scale-100', 'opacity-100');
-            } else {
-                topBtn.classList.remove('scale-100', 'opacity-100');
-                topBtn.classList.add('scale-0', 'opacity-0');
-            }
-        });
-
-        // Click interaction
-        if (topBtn) {
-            topBtn.addEventListener('click', (e) => {
-                e.preventDefault();
-                window.scrollTo({
-                    top: 0,
-                    behavior: 'smooth'
-                });
-            });
-        }
-    })();
-</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="lib/wow/wow.min.js"></script>
+<script src="lib/easing/easing.min.js"></script>
+<script src="lib/waypoints/waypoints.min.js"></script>
+<script src="lib/owlcarousel/owl.carousel.min.js"></script>
+<script src="lib/tempusdominus/js/moment.min.js"></script>
+<script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
+<script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
